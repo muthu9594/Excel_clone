@@ -12,6 +12,7 @@ body{
     background-color: #218c74;
     display: flex;
     align-items: flex-end;
+    padding-left: 1rem;
 }
 .page-action{
     margin: 0.5rem;
@@ -19,7 +20,7 @@ body{
 }
 .cellprops-actions-cont{
     height: 3rem;
-    background-color: lightsalmon;
+    background-color: #ecf0f1;
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -45,17 +46,45 @@ padding: 0.2rem;
 }
 
 .formula-actions-cont{
-    height: 3rem;
-    background-color: lightblue;
+    height: 2rem;
+    background-color: #ecf0f1;
+    padding-left:1rem  ;
+    display: flex;
+    align-items: center;
+}
+
+.formula-actions-cont > * {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.formula-icon {
+    width: 1.2rem;
+}
+
+.address-bar {
+    width: 5rem;
+    text-align: center ;
+
+}
+
+.formula-bar {
+    width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem ); 
+}
+
+.formula-actions-cont > input {
+    border: none;
+    outline: none;
+    height: 70%;
 }
 .sheet-actions-cont{
-    height: 3rem;
-    background-color: lightcoral;
+    height: 3rem; 
     display: flex;
     align-items: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     gap: 1rem;
+    background-color: #ecf0f1;
 }
 
 .sheet-actions-cont > * {
@@ -70,7 +99,6 @@ padding: 0.2rem;
 .sheets-folder-cont{
     height: 80%;
     width: 5rem;
-    background-color: yellowgreen;
     width: calc(100vw - 2vw);
     display: flex;
     align-items: center;
@@ -78,10 +106,78 @@ padding: 0.2rem;
 .sheet-folder {
     text-decoration: underline;
     font-weight: bold;
-    text-decoration-thickness:5px ;
+    text-decoration-thickness:3px ;
+    font-size: 0.9rem;
 }
 
 .grid-cont{
-    height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
 }
+
+.top-left-dummy-box{
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d8c;
+    position: fixed;
+    z-index: 1 ;
+}
+
+.address-col-cont{
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+
+.address-row-cont{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+    
+}
+
+.cells-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+
+}
+
+.address-col{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    border: 1px solid #dfe4ea;
+
+}
+
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.row-cont{
+    display: flex;
+}
+
+.cell {
+    border: 1px solid #dfe4ea;
+    height: 2rem;
+    width: 5rem;
+    outline: none;
+}
+
+
+
+
 
